@@ -28,8 +28,10 @@ We ssh into the server as mowree
 ```
 ssh mowree@ip -i id_rsa(the file in our machine)
 ```
-With winpeas we realized that mowree user have writing privileges to the passwd file, so we set a password on the passwd type with openssl passwd -1
-
+With winpeas we realized that mowree user have writing privileges to the passwd file, so we set a password on the passwd type with 
+```
+openssl passwd -1
+```
 That password we use it to replace the x on the root user password.
 
 With that we have access to root with su root
