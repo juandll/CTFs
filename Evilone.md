@@ -24,8 +24,10 @@ We get the faile in our machine and set chmod 600 file
 
 We use rockyou.txt password list and john to crack the password of the id_rsa 
 
-We ssh into the server as mowree ssh mowree@ip -i id_rsa(the file in our machine)
-
+We ssh into the server as mowree 
+```
+ssh mowree@ip -i id_rsa(the file in our machine)
+```
 With winpeas we realized that mowree user have writing privileges to the passwd file, so we set a password on the passwd type with openssl passwd -1
 
 That password we use it to replace the x on the root user password.
