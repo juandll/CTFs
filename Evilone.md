@@ -1,18 +1,21 @@
-Nmap -sA x.x.x.x
-
+For getting the services availabel:
+```
+Nmap -sV x.x.x.x
+```
 I got port 22 and port 80 open
 When I go to port 80 on web I got the Apache index webpage.
 Later I used gobuster with seclist for web discovery list.
+```
 Gobuster dir -r -u http://ip/ -w list -x HTML,php,txt
-
+```
 Gobuster on directory with -r to follow redirect 
 (Feroxbuster might do the job$
 I found ip/secret/ so I use gobuster again on it to find ip/secret/evil.php 
 
 With ffuf I set a payload with a list to find any vulnerabilities for the /erc/passwd file
-
+```
 Ffuf -r -u http://ip/secret/evil.php?FUZZ=/etc/passwd -w list -fs
-
+```
 The machine had a ssh service, and a user called mowree 
 
 We check for an id_rsa file on the user /home/mowree/.ssh/id_rsa 
