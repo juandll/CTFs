@@ -1,7 +1,7 @@
 I ran the following command for information on the services
-'''
+```
 nmap -sV IP
-'''
+```
 From there i got:
 21/tcp open  ftp     vsftpd 3.0.3
 80/tcp open  http    Apache httpd 2.4.18
