@@ -250,8 +250,8 @@ https://blog.theori.io/research/CVE-2022-32250-linux-kernel-lpe-2022/
 I ran cve-2021-4034 :
 https://github.com/arthepsy/CVE-2021-4034/blob/main/cve-2021-4034-poc.c
 getting the C file on the attacker machine and FTP into the vulnerable machine. I just run 
-''''
+````
 gcc pwn.c -o pwn
 ./pwn
-''''
+````
 and then I was able to use root privilages.
