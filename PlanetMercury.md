@@ -13,7 +13,7 @@ PORT     STATE SERVICE
 8080/tcp open  http-proxy
 
 ````
-I also got this: http://<ip>/mercuryfacts/1/ by navigating through the website.
+I also got this: http://IP/mercuryfacts/1/ by navigating through the website.
 It looks like a query for facts to mercury. I ran sqlmap to check this:
 
 ````
