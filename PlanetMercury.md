@@ -69,7 +69,7 @@ sqlmap -u http://10.0.3.244:8080/mercuryfacts/1 -D mercury -T users --dump
 | 4  | mercuryisthesizeof0.056Earths | webmaster |
 +----+-------------------------------+-----------+
 ````
-With this information I got access throught the webmaster username via SSH. Inside is the userflag.
+Besides the users we also know that there is an ssh service open. I tried the users and passwords for ssh connection and I got into the machine with webmaster username.
 
 From here I check the linux kernel version and vulnerabilities that might be vulnerable to; This with the help of LinPEAS:
 
