@@ -1,0 +1,41 @@
+[
+	{
+		"File": {
+			"FileName": "0bd15da0-2251-4cc0-8c52-303fb467d56f.jpg",
+			"FileSize": "182 kB",
+			"FileModifyDate": "2024/05/16 23:24:52",
+			"FileAccessDate": "2024/05/16 23:24:52",
+			"FileInodeChangeDate": "2024/05/16 23:24:52",
+			"FilePermissions": "-rw-r--r--",
+			"FileType": "JPEG",
+			"FileTypeExtension": "jpg",
+			"MIMEType": "image/jpeg",
+			"ExifByteOrder": "Big-endian (Motorola, MM)",
+			"ImageWidth": 960,
+			"ImageHeight": 1280,
+			"EncodingProcess": "Baseline DCT, Huffman coding",
+			"BitsPerSample": 8,
+			"ColorComponents": 3,
+			"YCbCrSubSampling": "YCbCr4:2:0 (2 2)"
+		},
+		"JFIF": {
+			"JFIFVersion": 1.01,
+			"ResolutionUnit": "None",
+			"XResolution": 72,
+			"YResolution": 72
+		},
+		"EXIF": {
+			"Orientation": "Horizontal (normal)",
+			"XResolution": 72,
+			"YResolution": 72,
+			"ResolutionUnit": "inches",
+			"ColorSpace": "sRGB",
+			"ExifImageWidth": 960,
+			"ExifImageHeight": 1280
+		},
+		"Composite": {
+			"ImageSize": "960x1280",
+			"Megapixels": 1.2
+		}
+	}
+]
